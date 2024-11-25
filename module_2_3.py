@@ -6,3 +6,4 @@ while len(my_list) != 0:
         continue
     else:
         my_list.pop(0)
+        break
