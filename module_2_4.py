@@ -19,5 +19,5 @@ for i in numbers:
             primes.append(i)
         else:
             not_primes.append(i)
-print('Четные:', primes)
-print('Не четные:', not_primes)
+print('Простые:', primes)
+print('Не простые:', not_primes)
