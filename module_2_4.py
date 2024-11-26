@@ -4,14 +4,13 @@ not_primes = []
 is_prime = True
 for i in numbers:
     for n in numbers:
-        if i % n == 1 or i > n:
+        if i % n == 0 and i > n:
             primes.append(i)                            # 3 / 1, 3 / 2
-            numbers.pop(0)
             continue
         else:
             not_primes.append(i)
-            numbers.pop(0)
             break
+    numbers.pop(0)
 
 print('Четные:', primes)
 print('Не четные:', not_primes)
